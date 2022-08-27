@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>CJWwebsite</title>
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero-sub">
+            <Nav>
+                <img src="images/MyLogo.png" class="logo" 
+                width="140">
+                <ul>
+                    <li><a href="file:///Users/cadenwoloski/Desktop/Robotics:Coding/html%20project/website.html">HOME</a></li>
+                    <li><a href="file:///Users/cadenwoloski/Desktop/Robotics:Coding/html%20project/About.html">ABOUT</a></li>
+                </ul>
+                <img src="images/moon.png" id="icon">
+            </Nav>
+        </div>
+
+        <div class="abpgtext">
+            <h1 class="aboutme-h1">
+                About <span class="aboutme-h1-me">Me</span>
+            </h1>
+            <p class="ab-text"> I created this website because I always wanted to learn <br>how to code and program. 
+                My mind has always been geared towards <span class="stem">STEM</span> and I wish <br>one day to go to a 
+                great university like harvard, Yale, Stamford, or <span class="mit">MIT</span>. <br>For now while I am 
+                still young I will learn as much as I can.
+            </p>
+        </div>
+
+        <div class="img-box">
+            <img src="images/back.png" class="back-img" width="145%">
+            <img src="images/front.png" class="front-img" width="90%">
+        </div>
+        <div class="social-links-ab">
+            <a href="https://instagram.com/cjwoloski_12345?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.snapchat.com/1F3bC2W5" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+
+        <script>
+
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-mode");
+                if(document.body.classList.contains("dark-mode")) {
+                    icon.src = "sun.png";
+                }else{
+                    icon.src = "moon.png";
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
